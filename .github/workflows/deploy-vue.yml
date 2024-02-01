@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - name: check out the code to build server
-        uses: actions/ checkout@v3
+        uses: actions/checkout@v3
       - uses: pnpm/action-setup@v2.2.4
         with:
           version: 7
@@ -32,4 +32,3 @@ jobs:
           source: "./dist/*"
           target: "/var/www/html"
           strip-components: 1
-          
