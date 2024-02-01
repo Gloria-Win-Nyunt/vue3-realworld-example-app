@@ -32,5 +32,4 @@ jobs:
           source: "./dist/*"
           target: "/var/www/html"
           strip-components: 1
-
-      
+          
